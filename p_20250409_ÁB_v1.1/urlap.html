@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animációk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SNUS KINGDOM</h1>
+        <nav>
+            <ul>
+                <li><a href="base.html">főoldal</a></li>
+                <li><a href="animation.html">animációk</a></li>
+                <li><a href="urlap.html">űrlap</a></li>
+                <li><a href="video.html">videó</a></li>
+                <li><a href="tablazat.html">táblázat</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="container">
+            
+            <section>
+                <article>
+                    <h2>Űrlap</h2>
+    
+                    <form action="" name="Rendelés">
+                        <fieldset>
+                            <legend>
+                                A Megrendelő Adatai
+                            </legend>
+                            <p>
+                                <label for="">Név: <input type="text" name="nev">
+                                    <small>Vezetéknév, Keresztnév</small>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="">Telefon: <input type="text" name="nev">
+    
+                                </label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                               számlázás
+                            </legend>
+    
+                            <p>
+                                <label>
+                                    <input type="radio" name="szamla" value="Céges" checked>Cég
+                                    <input type="radio" name="szamla" value="Magánszemély" checked>Magánszemély
+                                </label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Márka</legend>
+                            <p>
+                                <label>
+                                    <input type="checkbox" name="snus1" value="Cuba" checked>Cuba
+                                    <input type="checkbox" name="snus2" value="ICEBERG">ICEBERG
+                                    <input type="checkbox" name="snus3" value="Pablo">Pablo
+                                </label>
+                            </p>
+                        </fieldset>
+                        <p>
+                            <label for="">Mennyiség(minden kiválasztott márkából): <input type="number" nev="Mennyiség"></label>
+                        </p>
+                        <p>
+                            <label for="">ideális kiszállítási Idő: <input type="date" name="kiszalitás"></label>
+                        </p>
+                        <p>
+                            <label for="">Megjegyzések: <textarea name="egyeb" id=""></textarea>
+    
+                            </label>
+                        </p>
+                        <button type="reser">Alaphelyzet</button>
+                        <button type="submit">Elküldés</button>
+                    </form>
+                    </artcle>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        2025© Ács Borisz
+    </footer>
+</body>
+</html>
