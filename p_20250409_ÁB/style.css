@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url("pics/background.webp") no-repeat center center fixed;
+    background-repeat: repeat; 
+    background-size: auto; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+h2{
+text-decoration-style: solid;
+    font-size: 24px;
+    color: #00b7ff;
+}
+    header {
+        background: #ddd;
+        padding: 10px;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    nav ul li {
+        display: inline;
+        padding: 5px 10px;
+        background: white;
+        border: 1px solid black;
+    }
+    .main-image, .animation-box {
+        width: 80%;
+        margin: 20px auto;
+        padding: 50px;
+        border: 3px solid black;
+    }
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .product, .shop {
+        width: 150px;
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+    .random-pic {
+        width: 500px;
+        height: 250px;
+        background-image: url("pics/skynews-snus-football_6291398.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 2px solid black; 
+        margin: 0 auto; 
+        display: block; 
+        margin-bottom: 170px;
+    }
+
+    .animation-box {
+        width: 150px;
+        height: 150px;
+        background-image: url("pics/siberia-80-white-dry-slim.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%; 
+        animation: orbit 4s infinite, pulse 2s infinite ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+    }
+    
+
+    @keyframes orbit {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
+        }
+        25% {
+            transform: translate(-50%, -50%) rotate(90deg) translateX(150px) rotate(-90deg);
+        }
+        50% {
+            transform: translate(-50%, -50%) rotate(180deg) translateX(150px) rotate(-180deg);
+        }
+        75% {
+            transform: translate(-50%, -50%) rotate(270deg) translateX(150px) rotate(-270deg);
+        }
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg);
+        }
+    }
+    
+ 
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.5);
+            opacity: 0.5;
+        }
+    }
+    
+    footer {
+        margin-top: 20px;
+        padding: 10px;
+        background: #ddd;
+    }
+
+    .main-image{
+        width: 1800px;
+        height: 100px;
+        background-image: url("pics/header.png");
+        background-size: cover; 
+        background-position: center; 
+    }
+
+    .product {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    
+    .image img {
+        background-color: white;
+        width: 100%; 
+        height: auto; 
+        margin-top: 10px; 
+    }
+    
+
+    
+    .shop {
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+        width: 190px; 
+    }
+    
+    .shops {
+        margin-top: 10px;
+        display: flex; 
+        justify-content: center; 
+        gap: 10px; 
+    }
+    
+    .shop img {
+        width: 180px; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+
+        th {
+            color: rgb(0, 247, 255);
+            background-color: rgb(218, 33, 126);
+        }
+
+        .table-container {
+            width: 680px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            margin-bottom: 520px;
+
+        }
+
+        table tr:nth-child(2) {
+            background-color: #00b7ff;
+        }
+        table tr {
+            background-color: #00ffaa;
+        }
+
+        table tr:hover {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        @media screen and (max-width: 640px) {
+            section {
+                background-color: lightgreen;
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            #banner-content {
+                display: none;
+
+            }
+        }
+
+
+    
+        
+        .video-page main {
+            padding: 2em;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .video-container {
+            background-color: white;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 310px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        input:hover,textarea:hover
+{
+    border-width: 2px;
+    border-color: rgb(9, 94, 82);
+}
+
+form fieldset {
+    color: #042442;
+    font-style: oblique;
+    background-color: rgba(204, 120, 221, 0.6);
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+p {
+    color: #bbb7e4;
+    font-style: oblique;
+    background-color: rgba(70, 4, 77, 0.6);
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
